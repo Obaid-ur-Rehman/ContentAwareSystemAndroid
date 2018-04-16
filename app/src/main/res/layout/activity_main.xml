@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/serverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="casual"
+        android:text="Server:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:text="Notifications:" />
+
+    <TextView
+        android:id="@+id/tvNoti"
+        android:layout_width="348dp"
+        android:layout_height="159dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="-70dp"
+        android:layout_marginStart="-70dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tvNoti"
+        android:layout_marginBottom="229dp"
+        android:text="Saved Notification" />
+
+    <TextView
+        android:id="@+id/savedNotis"
+        android:layout_width="347dp"
+        android:layout_height="216dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="-69dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/btnSaved"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:layout_alignTop="@+id/btnClear"
+        android:layout_toStartOf="@+id/btnClear"
+        android:text="Get Saved Notifications" />
+
+    <Button
+        android:id="@+id/btnClearCache"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/savedNotis"
+        android:layout_alignTop="@+id/btnClear"
+        android:text="Clear Cache" />
+
+</RelativeLayout>
